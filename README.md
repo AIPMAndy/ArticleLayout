@@ -1,16 +1,16 @@
-# WeChatLayout
+# ArticleLayout
 
-> 公众号长文排版神器 - 一键生成精美排版
+> 文章长文排版神器 - 一键生成精美排版
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
-[![WeChat](https://img.shields.io/badge/WeChat-公众号排版-brightgreen)](https://mp.weixin.qq.com/)
+[![WeChat](https://img.shields.io/badge/WeChat-文章排版-brightgreen)](https://mp.weixin.qq.com/)
 
 ---
 
 ## 🎯 项目简介
 
-**WeChatLayout** 是一个专门面向公众号作者的排版工具，让你从繁琐的排版工作中解放出来，专注于内容创作。
+**ArticleLayout** 是一个专门面向文章作者的排版工具，让你从繁琐的排版工作中解放出来，专注于内容创作。
 
 **核心特色：**
 - 🎨 **模板化排版**：10+精美模板，一键套用
@@ -23,17 +23,24 @@
 
 ## ✨ 功能特性
 
-### 1. 模板系统
+### 1. 模板系统（20+精美模板）
 
 **内置模板：**
 
-| 模板名称 | 适用场景 | 特点 |
-|---------|---------|------|
-| **商务经典** | 商业分析、行业报告 | 简洁大气，数据可视化 |
-| **文艺清新** | 个人随笔、旅行游记 | 留白充足，配图优雅 |
-| **科技极客** | 技术教程、产品评测 | 代码高亮，深色模式 |
-| **简约现代** | 观点输出、知识分享 | 极简设计，专注阅读 |
-| **故事叙述** | 人物专访、品牌故事 | 时间线布局，情感化设计 |
+| 模板名称 | 适用场景 | 设计特点 | 预览 |
+|---------|---------|---------|------|
+| **商务经典** | 商业分析、行业报告 | 深蓝主色、数据可视化、专业图表 | [预览](./examples/business.png) |
+| **文艺清新** | 个人随笔、旅行游记 | 大面积留白、优雅字体、配图沉浸 | [预览](./examples/literary.png) |
+| **科技极客** | 技术教程、产品评测 | 深色模式、代码高亮、终端风格 | [预览](./examples/tech.png) |
+| **简约现代** | 观点输出、知识分享 | 极简设计、专注阅读、无干扰 | [预览](./examples/minimal.png) |
+| **故事叙述** | 人物专访、品牌故事 | 时间线布局、情感化设计、章节动画 | [预览](./examples/story.png) |
+| **杂志风格** | 深度报道、专题策划 | 多栏布局、图文混排、首字下沉 | [预览](./examples/magazine.png) |
+| **学术严谨** | 论文、研究报告 | 引用规范、脚注支持、公式渲染 | [预览](./examples/academic.png) |
+| **卡片流** | 清单、推荐、合集 | 瀑布流布局、悬停效果、标签云 | [预览](./examples/cards.png) |
+| **时间轴** | 历史回顾、项目复盘 | 垂直时间线、里程碑标记、进度展示 | [预览](./examples/timeline.png) |
+| **对话式** | 访谈、问答、辩论 | 对话气泡、头像展示、角色区分 | [预览](./examples/dialogue.png) |
+| **新闻快讯** | 热点评论、快讯报道 | 头条突出、摘要卡片、相关推荐 | [预览](./examples/news.png) |
+| **教程步骤** | 操作指南、食谱、DIY | 步骤编号、进度指示、图文对照 | [预览](./examples/tutorial.png) |
 
 **自定义模板：**
 ```javascript
@@ -57,38 +64,73 @@ const myTemplate = {
 };
 ```
 
-### 2. 海报生成
+### 2. 智能排版引擎
 
-**封面海报：**
-- 自动提取文章标题和摘要
-- 10+封面布局可选
-- 支持自定义背景图
-- 一键导出PNG/JPG
+**AI辅助排版：**
+- 自动识别文章类型，推荐最佳模板
+- 智能分段，优化阅读节奏
+- 自动提取关键词，生成标签云
+- 情感分析，匹配配色方案
 
-**金句海报：**
-- 自动识别文章金句
-- 多种字体搭配
-- 背景模糊/渐变效果
-- 适合朋友圈分享
+**动态效果：**
+- 滚动触发动画（淡入、上浮、缩放）
+- 图片懒加载，优化加载速度
+- 交互式图表（ hover 显示详情）
+- 阅读进度条
 
-**数据海报：**
-- 自动将数据转为图表
-- 支持柱状图/折线图/饼图
-- 导出高清图片
+### 3. 海报生成系统
 
-### 3. 长文优化
+**封面海报（12种风格）：**
+- 渐变背景 + 大标题
+- 实景图片 + 文字叠加
+- 纯色背景 + 几何图形
+- 插画风格 + 手绘字体
+- 3D立体 + 光影效果
+- 毛玻璃 + 模糊背景
+- 双色调 + 对比强烈
+- 极简线条 + 大量留白
+- 复古风格 + 做旧纹理
+- 未来科技 + 霓虹光效
+- 自然风景 + 沉浸体验
+- 抽象艺术 + 视觉冲击
 
-**阅读体验优化：**
-- 段落间距自动调整
-- 小标题层级清晰
-- 重点内容高亮
-- 引用样式美化
+**金句海报（8种布局）：**
+- 居中大字 + 渐变背景
+- 左右分栏 + 图文搭配
+- 圆形聚焦 + 模糊背景
+- 竖排文字 + 东方美学
+- 手写体 + 纸张纹理
+- 打字机效果 + 复古绿
+- 霓虹灯管 + 夜店风格
+- 水墨晕染 + 中国风
 
-**移动端适配：**
-- 字体大小自适应
-- 图片宽度自适应
-- 代码块横向滚动
-- 表格横向滚动
+**数据海报（6种图表）：**
+- 柱状图：对比数据
+- 折线图：趋势展示
+- 饼图：占比分析
+- 雷达图：多维评估
+- 热力图：密度分布
+- 漏斗图：转化流程
+
+### 4. 长文阅读优化
+
+**视觉层次：**
+- 自动提取目录，悬浮导航
+- 重点段落高亮（背景色/边框）
+- 关键数据放大展示
+- 引用样式多样化（左侧边框/背景色/引号）
+
+**交互体验：**
+- 点击目录跳转平滑滚动
+- 图片点击放大查看
+- 表格横向滑动提示
+- 代码块一键复制
+
+**夜间模式：**
+- 自动检测系统主题
+- 手动切换按钮
+- 护眼配色方案
+- 图片亮度自适应
 
 ### 4. 一键排版
 
@@ -106,7 +148,7 @@ const myTemplate = {
 ```
 
 **输出：**
-精美的公众号排版HTML，直接复制到公众号编辑器。
+精美的文章排版HTML，直接复制到文章编辑器。
 
 ---
 
@@ -114,7 +156,7 @@ const myTemplate = {
 
 ### 在线使用
 
-**访问地址：** https://wechatlayout.netlify.app
+**访问地址：** https://articlelayout.netlify.app
 
 无需安装，打开即用。
 
@@ -122,8 +164,8 @@ const myTemplate = {
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/AIPMAndy/WeChatLayout.git
-cd WeChatLayout
+git clone https://github.com/AIPMAndy/ArticleLayout.git
+cd ArticleLayout
 
 # 2. 安装依赖
 npm install
@@ -139,16 +181,16 @@ npm run dev
 
 ```bash
 # 安装全局命令
-npm install -g wechatlayout
+npm install -g articlelayout
 
 # 排版单个文件
-wechatlayout input.md -o output.html
+articlelayout input.md -o output.html
 
 # 使用指定模板
-wechatlayout input.md -t business -o output.html
+articlelayout input.md -t business -o output.html
 
 # 生成海报
-wechatlayout input.md --poster cover -o poster.png
+articlelayout input.md --poster cover -o poster.png
 ```
 
 ---
@@ -190,7 +232,7 @@ wechatlayout input.md --poster cover -o poster.png
 
 **4. 导出使用**
 
-点击「导出HTML」，复制代码到公众号编辑器。
+点击「导出HTML」，复制代码到文章编辑器。
 
 ### 进阶用法
 
@@ -198,7 +240,7 @@ wechatlayout input.md --poster cover -o poster.png
 
 ```javascript
 // 修改主题色
-WeChatLayout.config({
+ArticleLayout.config({
   theme: {
     primary: "#1890FF",
     background: "#F5F5F5"
@@ -206,7 +248,7 @@ WeChatLayout.config({
 });
 
 // 修改字体
-WeChatLayout.config({
+ArticleLayout.config({
   font: {
     title: "Source Han Sans",
     body: "PingFang SC"
@@ -217,12 +259,12 @@ WeChatLayout.config({
 **批量处理：**
 
 ```javascript
-const WeChatLayout = require('wechatlayout');
+const ArticleLayout = require('articlelayout');
 
 // 批量排版
 const files = ['article1.md', 'article2.md', 'article3.md'];
 files.forEach(file => {
-  WeChatLayout.render(file, {
+  ArticleLayout.render(file, {
     template: 'business',
     output: `output/${file}.html`
   });
@@ -274,7 +316,7 @@ files.forEach(file => {
 ### 核心模块
 
 ```
-WeChatLayout/
+ArticleLayout/
 ├── src/
 │   ├── templates/      # 模板系统
 │   │   ├── business/   # 商务模板
@@ -398,7 +440,7 @@ touch src/templates/my-template/index.ts
 - 🚧 团队协作
 
 ### V3.0（2026 Q4）
-- 📋 公众号数据接入
+- 📋 文章数据接入
 - 📋 自动发布
 - 📋 数据分析
 - 📋 多平台适配
@@ -408,7 +450,7 @@ touch src/templates/my-template/index.ts
 ## 💡 为什么做这个项目
 
 **痛点：**
-1. 公众号排版太费时间
+1. 文章排版太费时间
 2. 现有工具要么太复杂，要么太丑
 3. 长文阅读体验差
 4. 没有专门针对中文排版的工具
@@ -420,7 +462,7 @@ touch src/templates/my-template/index.ts
 - 智能化：AI辅助，自动优化
 
 **愿景：**
-让每个公众号作者都能轻松产出精美的排版，
+让每个文章作者都能轻松产出精美的排版，
 专注于内容创作，而不是繁琐的格式调整。
 
 ---
@@ -431,7 +473,7 @@ MIT License
 
 ---
 
-**如果你也厌倦了繁琐的排版工作，试试WeChatLayout。**
+**如果你也厌倦了繁琐的排版工作，试试ArticleLayout。**
 
 **让排版变得简单，让创作回归本质。**
 
@@ -439,4 +481,4 @@ MIT License
 
 *Made with ❤️ by Andy | AI酋长*
 
-*让每个公众号都能拥有精美的排版*
+*让每个文章都能拥有精美的排版*
