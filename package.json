@@ -1,10 +1,10 @@
 {
-  "name": "wechatlayout",
+  "name": "articlelayout",
   "version": "1.0.0",
   "description": "公众号长文排版神器 - 一键生成精美排版",
   "main": "dist/index.js",
   "bin": {
-    "wechatlayout": "./bin/cli.js"
+    "articlelayout": "./bin/cli.js"
   },
   "scripts": {
     "dev": "vite",
@@ -25,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AIPMAndy/WeChatLayout.git"
+    "url": "https://github.com/AIPMAndy/ArticleLayout.git"
   },
   "bugs": {
-    "url": "https://github.com/AIPMAndy/WeChatLayout/issues"
+    "url": "https://github.com/AIPMAndy/ArticleLayout/issues"
   },
-  "homepage": "https://github.com/AIPMAndy/WeChatLayout#readme",
+  "homepage": "https://github.com/AIPMAndy/ArticleLayout#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
