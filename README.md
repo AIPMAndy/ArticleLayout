@@ -469,7 +469,7 @@ touch src/templates/my-template/index.ts
 
 ## 📄 许可证
 
-MIT License
+Apache 2.0 License
 
 ---
 
